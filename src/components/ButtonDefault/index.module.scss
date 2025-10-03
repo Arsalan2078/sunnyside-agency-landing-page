@@ -1,0 +1,44 @@
+@use "../../scss/mixins";
+
+.button {
+  position: relative;
+  padding: 0 0.59375rem;
+  color: var(--clr-grey-950);
+
+  @include mixins.text-preset-8;
+  text-transform: uppercase;
+
+  --_color-bg: rgb(from var(--color-bg) r g b / 0.25);
+}
+
+.button::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  content: "";
+
+  border-radius: 1.75rem;
+
+  background-color: rgb(from var(--_color-bg) r g b / 0.25);
+  height: 0.625rem;
+  width: calc(100%);
+
+  transition: background-color var(--transition);
+}
+
+.button:hover,
+.button:focus {
+  &::before {
+    background-color: rgb(from var(--_color-bg) r g b / 1);
+  }
+}
+
+.button1 {
+  --color-bg: var(--clr-yellow-500);
+}
+
+.button2 {
+  --color-bg: var(--clr-red-400);
+}

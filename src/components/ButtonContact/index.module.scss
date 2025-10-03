@@ -1,0 +1,21 @@
+@use "../../scss/mixins";
+
+.button {
+  border-radius: 1.75rem;
+  padding: 0.96875rem 1.71875rem;
+
+  --_color-bg: rgb(from var(--clr-white) r g b / 0.25);
+  --_color-text: var(--clr-white);
+
+  background-color: var(--_color-bg);
+  color: var(--_color-text);
+
+  @include mixins.text-preset-8;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    --_color-bg: var(--clr-white);
+    --_color-text: var(--clr-grey-950);
+  }
+}
