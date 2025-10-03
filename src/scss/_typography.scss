@@ -3,3 +3,29 @@
 body {
   @include mixins.text-preset-10;
 }
+
+h1 {
+  @include mixins.text-preset-2;
+}
+
+h2 {
+  @include mixins.text-preset-4;
+}
+
+h3 {
+  @include mixins.text-preset-5;
+}
+
+h4 {
+  @include mixins.text-preset-6;
+}
+
+@include mixins.screen-md {
+  h1 {
+    @include mixins.text-preset-1;
+  }
+
+  h2 {
+    @include mixins.text-preset-3;
+  }
+}

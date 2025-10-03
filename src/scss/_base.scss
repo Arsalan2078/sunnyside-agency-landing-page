@@ -1,3 +1,16 @@
+*:focus {
+  outline: 0.1875rem solid var(--clr-black);
+  outline-offset: 0.25rem;
+}
+
 img {
   display: block;
+}
+
+a {
+  transition: color var(--transition), background-color var(--transition);
+
+  svg path {
+    transition: fill var(--transition);
+  }
 }
