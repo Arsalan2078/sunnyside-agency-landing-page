@@ -1,0 +1,5 @@
+@use "./mixins";
+
+body {
+  @include mixins.text-preset-10;
+}

@@ -5,6 +5,12 @@
   }
 }
 
+@mixin screen-xl {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
 // typography mixins
 @mixin text-preset-1 {
   font-family: var(--ff-fraunces);

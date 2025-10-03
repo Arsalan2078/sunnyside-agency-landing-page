@@ -1,0 +1,72 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 4.59375rem 2.40625rem;
+  background-color: var(--clr-green-300);
+
+  --_color-text: var(--clr-green-500);
+  --_color-svg: var(--clr-green-600);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.logo {
+  svg {
+    width: 10.625rem;
+    height: 2.0625rem;
+  }
+
+  path {
+    fill: var(--_color-svg);
+  }
+}
+
+.links {
+  display: flex;
+  gap: 3.5rem;
+
+  a {
+    color: var(--_color-text);
+  }
+
+  a:hover,
+  a:focus {
+    --_color-text: var(--clr-white);
+  }
+}
+
+.socmeds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    aspect-ratio: 1;
+  }
+
+  a path {
+    fill: var(--_color-svg);
+  }
+
+  a:hover,
+  a:focus {
+    --_color-svg: var(--clr-white);
+  }
+}
