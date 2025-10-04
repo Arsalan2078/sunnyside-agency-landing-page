@@ -27,10 +27,10 @@
 
 @include mixins.screen-md {
   .section {
-    padding: clamp(4.46875rem, -1.1875rem + 23.5677vw, 10.125rem) 0;
+    padding: clamp(4.46875rem, -1.9955rem + 13.4673vw, 10.125rem) 0;
 
     > ul {
-      padding: 0 clamp(5.25rem, 0.3125rem + 20.5729vw, 10.1875rem);
+      padding: 0 clamp(5.25rem, -0.3929rem + 11.756vw, 10.1875rem);
     }
   }
 }

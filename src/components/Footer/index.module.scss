@@ -35,7 +35,7 @@
 
 .links {
   display: flex;
-  gap: 3.5rem;
+  gap: clamp(2rem, -5.5rem + 37.5vw, 3.5rem);
 
   a {
     color: var(--_color-text);
