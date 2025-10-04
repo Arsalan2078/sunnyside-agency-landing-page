@@ -1,0 +1,17 @@
+@use "../../scss/mixins";
+
+.section {
+  > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+}
+
+@include mixins.screen-lg {
+  .section {
+    > ul {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

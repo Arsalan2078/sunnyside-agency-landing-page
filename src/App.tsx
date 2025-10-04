@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Icon from "./components/Icon";
 import Logo from "./components/Logo";
 import Picture from "./components/Picture";
+import SectionGallery from "./components/SectionGallery";
 import TestimonialCard from "./components/TestimonialCard";
 
 export default function App() {
@@ -115,22 +116,7 @@ export default function App() {
             </ul>
           </section>
 
-          <section>
-            <ul>
-              <li>
-                <Picture picture="gallery-milkbottles" />
-              </li>
-              <li>
-                <Picture picture="gallery-orange" />
-              </li>
-              <li>
-                <Picture picture="gallery-cone" />
-              </li>
-              <li>
-                <Picture picture="gallery-sugarcubes" />
-              </li>
-            </ul>
-          </section>
+          <SectionGallery />
         </main>
 
         <Footer />
