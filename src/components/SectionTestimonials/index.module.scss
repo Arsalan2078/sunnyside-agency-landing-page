@@ -18,10 +18,10 @@
     gap: 3.5rem;
 
     padding: 0 clamp(1.5rem, -2.25rem + 15.625vw, 5.25rem);
+  }
 
-    > li {
-      max-width: 37.5rem;
-    }
+  > ul > li {
+    max-width: 37.5rem;
   }
 }
 
