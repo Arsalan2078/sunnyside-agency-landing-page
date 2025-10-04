@@ -1,0 +1,64 @@
+@use "../../scss/mixins";
+
+.section {
+  display: grid;
+
+  h2 {
+    color: var(--clr-grey-950);
+  }
+
+  p {
+    color: var(--clr-grey-550);
+  }
+}
+
+.subsection {
+  display: grid;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
+
+  padding: 4.21875rem 1.5rem;
+
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
+}
+
+@include mixins.screen-lg {
+  .subsection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    padding: 4.21875rem clamp(1.5rem, -6.6071rem + 16.8899vw, 8.59375rem);
+  }
+
+  .info {
+    align-items: start;
+    gap: clamp(2rem, 1.4286rem + 1.1905vw, 2.5rem);
+
+    text-align: start;
+  }
+
+  .transform {
+    > picture {
+      grid-column: 2;
+    }
+
+    > .content {
+      grid-row: 1;
+    }
+  }
+}
