@@ -1,0 +1,45 @@
+@use "../../scss/mixins";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(3.5rem, 2rem + 6.25vw, 5rem);
+
+  padding: clamp(3.4375rem, 2.4063rem + 4.2969vw, 4.46875rem) 0;
+  text-align: center;
+
+  > h4 {
+    color: var(--clr-grey-400);
+  }
+
+  > ul {
+    display: grid;
+    gap: 3.5rem;
+
+    padding: 0 clamp(1.5rem, -2.25rem + 15.625vw, 5.25rem);
+
+    > li {
+      max-width: 37.5rem;
+    }
+  }
+}
+
+@include mixins.screen-md {
+  .section {
+    padding: clamp(4.46875rem, -1.1875rem + 23.5677vw, 10.125rem) 0;
+
+    > ul {
+      padding: 0 clamp(5.25rem, 0.3125rem + 20.5729vw, 10.1875rem);
+    }
+  }
+}
+
+@include mixins.screen-full {
+  .section {
+    > ul {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+}
