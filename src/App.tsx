@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Icon from "./components/Icon";
 import Logo from "./components/Logo";
 import SectionGallery from "./components/SectionGallery";
+import SectionServices from "./components/SectionServices";
 import SectionTestimonials from "./components/SectionTestimonials";
 
 export default function App() {
@@ -63,7 +64,7 @@ export default function App() {
             <p>
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.{" "}
+              extend your brand in digital places.
             </p>
 
             <ButtonDefault href="#" variation="2">
@@ -71,16 +72,8 @@ export default function App() {
             </ButtonDefault>
           </section>
 
-          <section>
-            <h3>Graphic design</h3>
-            <p></p>Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-            <h3></h3>Photography
-            <p></p>Increase your credibility by getting the most stunning,
-            high-quality photos that improve your business image.
-          </section>
 
+          <SectionServices />
           <SectionTestimonials />
           <SectionGallery />
         </main>

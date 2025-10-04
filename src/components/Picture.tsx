@@ -73,7 +73,7 @@ export default function Picture({ picture, alt = "" }: PictureProps) {
 
   return (
     <picture>
-      <source srcSet={srcDesktop} media={`(min-width: 768px)`} />
+      <source srcSet={srcDesktop} media={`(min-width: 640px)`} />
       <img src={srcMobile} alt={alt} />
     </picture>
   );

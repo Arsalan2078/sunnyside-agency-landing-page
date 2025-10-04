@@ -1,0 +1,57 @@
+@use "../../scss/mixins";
+
+.section {
+  display: grid;
+}
+
+.service {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  text-align: center;
+
+  --_color-heading: var(--color-heading);
+  --_color-paragraph: var(--color-paragraph);
+}
+
+.desc {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: min(100%, 21.1875rem);
+
+  h3 {
+    color: var(--_color-heading);
+  }
+
+  p {
+    color: var(--_color-paragraph);
+    @include mixins.text-preset-11;
+  }
+}
+
+.graphic {
+  --color-heading: var(--clr-green-800);
+  --color-paragraph: var(--clr-green-600);
+}
+
+.photography {
+  --color-heading: var(--clr-blue-950);
+  --color-paragraph: var(--clr-blue-800);
+}
+
+@include mixins.screen-lg {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
