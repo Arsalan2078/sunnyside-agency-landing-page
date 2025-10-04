@@ -42,7 +42,7 @@
   color: var(--clr-grey-400);
 }
 
-@include mixins.screen-xl {
+@include mixins.screen-full {
   .card {
     gap: 4.5rem;
 
