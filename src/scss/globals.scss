@@ -1,5 +1,6 @@
+@use "./font-faces";
 @use "./reset";
 
 body {
-  background-color: pink;
+  font-family: "Fraunces";
 }

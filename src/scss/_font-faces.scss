@@ -1,0 +1,25 @@
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Barlow"), url("/fonts/barlow-v13-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Fraunces"),
+    url("/fonts/fraunces-v38-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Fraunces"),
+    url("/fonts/fraunces-v38-latin-900.woff2") format("woff2");
+}
