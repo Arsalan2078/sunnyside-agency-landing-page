@@ -1,6 +1,4 @@
 @use "./font-faces";
 @use "./reset";
-
-body {
-  font-family: "Fraunces";
-}
+@use "./root";
+@use "./typography";
