@@ -1,0 +1,5 @@
+@use "./scss/typography";
+
+.app {
+  @extend %text-preset-barlow-2;
+}

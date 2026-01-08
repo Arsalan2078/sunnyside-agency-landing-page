@@ -1,17 +1,9 @@
+import css from "./App.module.scss";
+
 export default function App() {
   return (
-    <div>
-      <div className="text-preset-fraunces--1">Fear is the mind killer</div>
-      <div className="text-preset-fraunces--2">Fear is the mind killer</div>
-      <div className="text-preset-fraunces--3">Fear is the mind killer</div>
-      <div className="text-preset-fraunces--4">Fear is the mind killer</div>
-      <div className="text-preset-fraunces--5">Fear is the mind killer</div>
-      <div className="text-preset-fraunces--6">Fear is the mind killer</div>
-      <div className="text-preset-barlow--1">Fear is the mind killer</div>
-      <div className="text-preset-barlow--2">Fear is the mind killer</div>
-      <div className="text-preset-barlow--3">Fear is the mind killer</div>
-      <div className="text-preset-barlow--4">Fear is the mind killer</div>
-      {/* About
+    <div className={`${css.app}`}>
+      About
       Services
       Projects
       Contact
@@ -54,7 +46,7 @@ export default function App() {
       About
       Services
       Projects
-      Contact */}
+      Contact
     </div>
   )
 }

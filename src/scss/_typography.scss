@@ -1,86 +1,84 @@
-@layer {
-  .text-preset-fraunces {
-    &--1 {
-      font-family: var(--ff-fraunces);
-      font-weight: var(--fw-900);
-      font-size: var(--fs-42-56);
-      letter-spacing: var(--ls-6-9);
-      line-height: var(--lh-125);
-      text-transform: uppercase;
-    }
-
-    &--2 {
-      font-family: var(--ff-fraunces);
-      font-weight: var(--fw-900);
-      font-size: var(--fs-32-40);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-125);
-    }
-
-    &--3 {
-      font-family: var(--ff-fraunces);
-      font-weight: var(--fw-900);
-      font-size: var(--fs-28);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-125);
-    }
-
-    &--4 {
-      font-family: var(--ff-fraunces);
-      font-weight: var(--fw-900);
-      font-size: var(--fs-20);
-      letter-spacing: var(--ls-4);
-      line-height: var(--lh-125);
-    }
-
-    &--5 {
-      font-family: var(--ff-fraunces);
-      font-weight: var(--fw-900);
-      font-size: var(--fs-18);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-125);
-    }
-
-    &--6 {
-      font-family: var(--ff-fraunces);
-      font-weight: var(--fw-900);
-      font-size: var(--fs-15);
-      letter-spacing: var(--ls-1);
-      line-height: var(--lh-165);
-    }
+%text-preset-fraunces {
+  &-1 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-42-56);
+    letter-spacing: var(--ls-6-9);
+    line-height: var(--lh-125);
+    text-transform: uppercase;
   }
 
-  .text-preset-barlow {
-    &--1 {
-      font-family: var(--ff-barlow);
-      font-weight: var(--fw-600);
-      font-size: var(--fs-20);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-125);
-    }
+  &-2 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-32-40);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-125);
+  }
 
-    &--2 {
-      font-family: var(--ff-barlow);
-      font-weight: var(--fw-600);
-      font-size: var(--fs-18);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-165);
-    }
+  &-3 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-28);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-125);
+  }
 
-    &--3 {
-      font-family: var(--ff-barlow);
-      font-weight: var(--fw-600);
-      font-size: var(--fs-16);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-170);
-    }
+  &-4 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-20);
+    letter-spacing: var(--ls-4);
+    line-height: var(--lh-125);
+  }
 
-    &--4 {
-      font-family: var(--ff-barlow);
-      font-weight: var(--fw-600);
-      font-size: var(--fs-14);
-      letter-spacing: var(--ls-0);
-      line-height: var(--lh-180);
-    }
+  &-5 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-18);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-125);
+  }
+
+  &-6 {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-15);
+    letter-spacing: var(--ls-1);
+    line-height: var(--lh-165);
+  }
+}
+
+%text-preset-barlow {
+  &-1 {
+    font-family: var(--ff-barlow);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-20);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-125);
+  }
+
+  &-2 {
+    font-family: var(--ff-barlow);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-18);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-165);
+  }
+
+  &-3 {
+    font-family: var(--ff-barlow);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-16);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-170);
+  }
+
+  &-4 {
+    font-family: var(--ff-barlow);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-14);
+    letter-spacing: var(--ls-0);
+    line-height: var(--lh-180);
   }
 }
